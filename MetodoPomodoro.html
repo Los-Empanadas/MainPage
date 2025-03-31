@@ -28,7 +28,7 @@
                 <h2>Pomodoro (25 min)</h2>
                 <div class="timer-display" id="timer-25">25:00</div>
                 <button class="timer-btn" onclick="startTimer(25, 'timer-25')">Iniciar</button>
-                <button class="timer-btn reset" onclick="resetTimer(25, 'timer-25')">Reiniciar</button>
+                <button class="timer-btn reset" onclick="resetTimer(5, 'timer-25')">Reiniciar</button>
             </div>
             
             <!-- Cronómetro 5 minutos -->
@@ -41,36 +41,7 @@
         </div>
     </div>
 
-    <script>
-        let intervals = {};
-        
-        function startTimer(minutes, elementId) {
-            if (intervals[elementId]) {
-                clearInterval(intervals[elementId]);
-            }
-            
-            let time = minutes * 60;
-            const timerDisplay = document.getElementById(elementId);
-            
-            intervals[elementId] = setInterval(() => {
-                const mins = Math.floor(time / 60).toString().padStart(2, '0');
-                const secs = (time % 60).toString().padStart(2, '0');
-                timerDisplay.textContent = `${mins}:${secs}`;
-                
-                if (time <= 0) {
-                    clearInterval(intervals[elementId]);
-                    alert(`¡Tiempo terminado! (${minutes} minutos)`);
-                } else {
-                    time--;
-                }
-            }, 1000);
-        }
-        
-        function resetTimer(minutes, elementId) {
-            clearInterval(intervals[elementId]);
-            document.getElementById(elementId).textContent = 
-                `${minutes.toString().padStart(2, '0')}:00`;
-        }
-    </script>
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
