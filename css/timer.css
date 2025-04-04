@@ -10,7 +10,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 200px;
+    width: 300px;
 }
 .timer-display {
     font-size: 3rem;
@@ -18,7 +18,7 @@
     color: #333;
 }
 .timer-btn {
-    background-color: #4CAF50;
+    background-color: #03a8a8;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -28,13 +28,13 @@
     transition: background-color 0.3s;
 }
 .timer-btn:hover {
-    background-color: #45a049;
+    background-color: #03a8a8;
 }
 .timer-btn.reset {
-    background-color: #f44336;
+    background-color: #011d2e;
 }
 .timer-btn.reset:hover {
-    background-color: #d32f2f;
+    background-color: #011d2e;
 }
 h2 {
     color: #333;

@@ -52,7 +52,7 @@ body {
 
 .main-button {
     padding: 12px 25px;
-    background-color: #4CAF50; /* Color verde */
+    background-color: #03a8a8; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -64,16 +64,16 @@ body {
 }
 
 .main-button:hover {
-    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
-    transform: scale(1.05); /* Efecto de zoom */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    background-color: #019494ad; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .main-button.blue {
-    background-color: #2196F3; /* Color azul */
+    background-color: #2196F3; 
 }
 
 .main-button.blue:hover {
-    background-color: #0b7dda; /* Azul más oscuro al pasar el mouse */
+    background-color: #0b7dda; 
 }
 
