@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | EMP</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <div class="navbar">
@@ -17,13 +18,16 @@
         </div>
     </div>
     
-    <div class="content" id="inicio">
-        <h1>Bienvenido a la Página Principal del grupo EMP</h1>
-        <p>EMP son las siglas de nuestro nombre de grupo.</p>
+    <div class="content" id="proyecto">
+        <h1>Lista de Tareas</h1>
+        <div class="task-container">
+            <div class="task-input">
+                <input type="text" id="task-input" placeholder="Escribe una tarea...">
+                <button id="add-task-btn">➕ Añadir</button>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
     </div>
-    <div class="main-buttons">
-        <a href="MetodoPomodoro.html" class="main-button">Técnica Pomodoro</a>
-        <a href="taskList.html" class="main-button blue">Lista de tareas</a>
-    </div>
+    <script src="js/task.js"></script>
 </body>
 </html>
