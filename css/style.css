@@ -4,6 +4,13 @@ body {
     padding: 0;
     background-color: lightblue;
 }
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+.dark-mode .task-container {
+    background-color: #1e1e1e;
+}
 
 .navbar {
     background-color: #06001f;
