@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="img/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | EMP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timer.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="calendario.html">Calendario</a>
+            <a href="contactos.html">Extra</a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h1>Nuestros Servicios</h1>
+        <p>Herramientas de productividad para tu equipo.</p>
+        
+        <div class="timer-container">
+            <!-- Cronómetro 25 minutos -->
+            <div class="timer">
+                <h2>Trabajo (25 min)</h2>
+                <div class="timer-display" id="timer-25">25:00</div>
+                <button class="timer-btn" onclick="startTimer(25, 'timer-25')">Iniciar</button>
+                <button class="timer-btn reset" onclick="resetTimer(25, 'timer-25')">Reiniciar</button>
+            </div>
+            
+            <!-- Cronómetro 5 minutos -->
+            <div class="timer">
+                <h2>Descanso (5 min)</h2>
+                <div class="timer-display" id="timer-5">05:00</div>
+                <button class="timer-btn" onclick="startTimer(5, 'timer-5')">Iniciar</button>
+                <button class="timer-btn reset" onclick="resetTimer(5, 'timer-5')">Reiniciar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="js/CronPomodoro.js"></script>
+</body>
+</html>
