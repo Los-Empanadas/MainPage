@@ -22,19 +22,27 @@
   </form>
 
   <script>
-    document.getElementById('registro').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const data = {
-        nombre: e.target.nombre.value,
-        email: e.target.email.value
-      };
-      await fetch('http://localhost:5000/registrar', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-      alert('Usuario registrado');
+  document.getElementById('registro').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = {
+      nombre: e.target.nombre.value,
+      email: e.target.email.value
+    };
+
+    const response = await fetch('http://localhost:5000/registrar', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
     });
-  </script>
+
+    if (response.ok) {
+      localStorage.setItem('loggedIn', 'true'); // Marcar sesión iniciada
+      alert('Usuario registrado exitosamente');
+      window.location.href = 'index.html'; // Redirigir a la página principal
+    } else {
+      alert('Hubo un error al registrar el usuario');
+    }
+  });
+</script>
 </body>
 </html>
