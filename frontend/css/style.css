@@ -216,3 +216,50 @@ body.dark-mode {
 .auth-btn:hover {
     background-color: #45a049;
 }
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container h1 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #06001f;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #03a8a8;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.form-container input:focus {
+    border-color: #019494;
+}
+
+.form-container .main-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #03a8a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-container .main-button:hover {
+    background-color: #019494;
+    transform: scale(1.03);
+}
